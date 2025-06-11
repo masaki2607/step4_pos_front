@@ -3,11 +3,13 @@ import Webcam from 'react-webcam';
 import { BrowserMultiFormatReader } from '@zxing/browser';
 
 type Product = {
+  id: string; 
   name: string;
   code: string;
   price: number;
 };
 
+const [products, setProducts] = useState<Product[]>([]);
 const TAX_RATE = 0.1;
 
 
