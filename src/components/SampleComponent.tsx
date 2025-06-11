@@ -3,7 +3,8 @@ import React from 'react'; // Reactライブラリをインポート
 // SampleComponentという関数コンポーネントを定義
 const SampleComponent: React.FC = () => {
     // 商品情報を格納するための状態を定義
-    const [products, setProducts] = React.useState([]); 
+    // const [products, setProducts] = React.useState([]); 
+       const [products, setProducts] = React.useState<{ id: string; name: string; code: string; price: number; }[]>([]);
 
     // コンポーネントがマウントされたときに商品情報を取得するための副作用を設定
     React.useEffect(() => {
