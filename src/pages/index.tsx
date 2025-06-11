@@ -9,7 +9,6 @@ type Product = {
   price: number;
 };
 
-const [products, setProducts] = useState<Product[]>([]);
 const TAX_RATE = 0.1;
 
 
